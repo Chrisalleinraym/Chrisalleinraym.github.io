@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order online</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="box">
+            <h1>
+                <a href="index.html">
+                    <img class="infinitea__logo" src="infinitea.png">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="orderonline.html">Order online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" class="default-input" required>
+
+            <label for="address">Address</label>
+            <input type="address" id="address" class="default-input" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" class="default-input" required placeholder="(xx)xxxxxxxx">
+
+            <label for="message">Additional</label>
+            <textarea cols="5" rows="5" id="message" class="default-input"> </textarea>
+
+            <legend>How would you like to be contacted?</legend>
+                <label for="radio-phone"><input type="radio" name="typecontact" value="Phone"
+                        id="radio-phone">Phone</label required>
+                <label for="radio-messenger"><input type="radio" name="typecontact" value="Messenger"
+                        id="radio-messenger" required>Messenger</label>
+
+            <legend>What time do you want to be delivered?</legend>
+                <input type="time" id="appt" name="appt" required>
+
+            <label class="checkbox"><input type="checkbox" checked>Would you like to subscribe for our
+                new product?</label>
+            <input type="submit" value="Complete order" class="complete">
+
+            <legend class="table">Shop hours:</legend>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mon-Fri</td>
+                        <td>8h-17h</td>
+                    <tfoot>
+                        <td colspan="2">Weekends Closed</td>
+                </tfoot>
+                </tbody>
+            </table>
+        </form>
+    </main>
+<footer>
+    <img class="infinitea__footerlogo" src="infinitea.png">
+    <p class="copyright">&copy; Infinitea Milk Teashop</p>
+</footer>
+</body>
+</html>
